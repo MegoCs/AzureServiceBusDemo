@@ -14,8 +14,8 @@ namespace ServiceBusDemo.Controllers
     public class OrdersController : ControllerBase
     {
 
-        const string ServiceBusConnectionString = "Endpoint=sb://adahidemo.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=uQFJEg3p8UJa5DusjB9ophQyXNd9lBrTbpq6OMky8n8=";
-        const string QueueName = "orders";
+        const string ServiceBusConnectionString = "";
+        const string QueueName = "";
         static IQueueClient queueClient;
 
         public OrdersController()
