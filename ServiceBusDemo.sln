@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusDemo", "ServiceBusDemo\ServiceBusDemo.csproj", "{EF05F660-D436-4F1B-AA49-B48D84E7B468}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusDemo", "ServiceBusDemo\ServiceBusDemo.csproj", "{EF05F660-D436-4F1B-AA49-B48D84E7B468}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusDemoReader", "ServiceBusDemoReader\ServiceBusDemoReader.csproj", "{593D16A2-A8E0-476D-ACDC-12A54A6614A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EF05F660-D436-4F1B-AA49-B48D84E7B468}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF05F660-D436-4F1B-AA49-B48D84E7B468}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF05F660-D436-4F1B-AA49-B48D84E7B468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593D16A2-A8E0-476D-ACDC-12A54A6614A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593D16A2-A8E0-476D-ACDC-12A54A6614A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593D16A2-A8E0-476D-ACDC-12A54A6614A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593D16A2-A8E0-476D-ACDC-12A54A6614A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
