@@ -46,7 +46,7 @@ namespace ServiceBusDemoReader
             {
                 // Maximum number of Concurrent calls to the callback `ProcessMessagesAsync`, set to 1 for simplicity.
                 // Set it according to how many messages the application wants to process in parallel.
-                MaxConcurrentCalls = 10000,
+                MaxConcurrentCalls = 10,
 
                 // Indicates whether MessagePump should automatically complete the messages after returning from User Callback.
                 // False below indicates the Complete will be handled by the User Callback as in `ProcessMessagesAsync` below.
@@ -67,10 +67,11 @@ namespace ServiceBusDemoReader
 
             Console.Write($"SeqNumber:{message.SystemProperties.SequenceNumber} Message Length:{messageStr.Length}");
             
-            Console.WriteLine($"ElapsedTime:{timePerParse.ElapsedMilliseconds}ms");
+            Console.WriteLine($"ElapsedTime:{timePerParse.ElapsedMilliseconds}ms ThreadId:{Thread.CurrentThread.ManagedThreadId}");
 
             timePerParse.Restart();
 
+            //Thread.Sleep(2000);           
             // Complete the message so that it is not received again.
             // This can be done only if the queueClient is created in ReceiveMode.PeekLock mode (which is default).
 
